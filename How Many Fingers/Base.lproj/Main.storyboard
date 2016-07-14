@@ -37,6 +37,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txw-nV-zU5">
                                 <rect key="frame" x="166" y="185" width="43" height="30"/>
                                 <state key="normal" title="Guess"/>
+                                <connections>
+                                    <action selector="guess:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QdM-Dt-ua6"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyi-ll-UBn">
                                 <rect key="frame" x="20" y="247" width="335" height="21"/>
@@ -49,7 +52,8 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="userGuessTextField" destination="KLF-34-Qm9" id="pqD-DN-DX0"/>
+                        <outlet property="resultLabel" destination="wyi-ll-UBn" id="gsb-Sh-nz7"/>
+                        <outlet property="userGuessTextField" destination="KLF-34-Qm9" id="ftR-21-L0C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
