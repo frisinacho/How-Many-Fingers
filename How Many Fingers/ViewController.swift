@@ -16,6 +16,9 @@ class ViewController: UIViewController {
     
     @IBAction func guess(sender: AnyObject) {
         
+        let diceRoll = Int(arc4random_uniform(6))
+        
+        print(diceRoll)
     }
     
     override func viewDidLoad() {
