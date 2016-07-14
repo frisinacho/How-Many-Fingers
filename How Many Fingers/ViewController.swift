@@ -18,10 +18,14 @@ class ViewController: UIViewController {
         
         let diceRoll = String(arc4random_uniform(6))
         
-        if diceRoll == userGuessTextField.text {
-            resultLabel.text = "You're right!"
+        if userGuessTextField.text!.isEmpty {
+            resultLabel.text = "Please introduce a number"
         } else {
-            resultLabel.text = "Wrong! It was a " + diceRoll
+            if diceRoll == userGuessTextField.text {
+                resultLabel.text = "You're right!"
+            } else {
+                resultLabel.text = "Wrong! It was a " + diceRoll
+            }
         }
         
         print(diceRoll)
